@@ -1,0 +1,20 @@
+<%- include('header') -%>
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+        <div class="tittle-pb-5">
+            <div class="font-weight-bold m-1">Login System</div>
+            <span class="m-1">Log in for the existing user</span>
+        </div>
+        <form action="/route/login" method="POST" class="pt-3">
+            <div class="form-group">
+                <input type="email" class="form-control m-1" placeholder="email" name="email">
+                <small class="form-text text-muted text-left">Register email address</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control m-1" name="password" placeholder="password">
+            </div>
+            <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+        </form>
+    </div>
+</div>
+<%- include('footer') -%>
